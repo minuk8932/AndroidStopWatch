@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="splashBGColor">#7335E8</color>
     <color name="splashTxtColor">#FFFFFF</color>
+    <color name="addTxtColor">#000000</color>
 </resources>

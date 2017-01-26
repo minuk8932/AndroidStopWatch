@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btn_add_hour_plus"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/fa_sort_asc"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/btn_add_minute_plus"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/fa_sort_asc"
+                    android:textSize="32sp" />
+
+                <EditText
+                    android:id="@+id/et_add_hour"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/et_add_minute"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/addTxtColor"
+                    android:textSize="32sp" />
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textAlignment="center"
+                    android:textColor="@color/addTxtColor"
+                    android:textSize="32sp" />
+
+                <EditText
+                    android:id="@+id/et_add_minute"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:text="00"
+                    android:textAlignment="center"
+                    android:textColor="@color/addTxtColor"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/et_add_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="분"/>
+
+
+                <Button
+                    android:id="@+id/btn_add_hour_minus"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="150dp"
+                    android:text="@string/fa_sort_dsc"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/btn_add_minute_minus"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="150dp"
+                    android:text="@string/fa_sort_dsc"
+                    android:textSize="32sp" />
+
+                <Button
+                    android:id="@+id/btn_alarm_add"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="220dp"
+                    android:text="추 가"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

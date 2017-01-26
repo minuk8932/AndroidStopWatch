@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">StopWatch</string>
+
+    <string name="fa_sort_asc">&#xf062;</string>
+    <string name="fa_sort_dsc">&#xf063;</string>
+    <string name="fa_plus">&#xf067;</string>
+    <string name="btn_add_txt">@string/fa_plus</string>
+
 </resources>
